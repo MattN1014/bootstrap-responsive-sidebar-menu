@@ -1,0 +1,54 @@
+//Variables
+@primary: #0097e2;
+@b: #000000;
+@w: #ffffff;
+@light-grey: #f3f3f3;
+@green: #97c908;
+
+/*===========================================================
+                    Site Wide Styles
+===========================================================*/
+html,
+body {
+    background-color: @w;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+section {
+    margin: 20px 0;
+}
+
+/*===========================================================
+                    Typograhpy Styles
+===========================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather', serif;
+    margin: 10px auto;
+}
+
+p,
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.light-text {
+    color: lighten(@b, 55%);
+}
