@@ -4,6 +4,7 @@
 @w: #ffffff;
 @light-grey: #f3f3f3;
 @green: #97c908;
+@im: !important;
 
 /*===========================================================
                     Site Wide Styles
@@ -51,4 +52,86 @@ a {
 
 .light-text {
     color: lighten(@b, 55%);
+}
+
+/*===========================================================
+        main-header Styles (Will only display on mobile)
+===========================================================*/
+header.main-header {
+    display: none;
+}
+
+header.main-header #sidebarCollapse {
+    border: 2px solid rgba(52, 73, 94, 0.5);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    width: 3rem;
+}
+
+header.main-header #sidebarCollapse:focus,
+header.main-header #sidebarCollapse:active {
+    outline: none @im;
+    box-shadow: none;
+}
+
+/*===========================================================
+                    Sidebar Navigation Styles
+===========================================================*/
+
+.sidebar {
+    background-color: @w;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.5);
+    box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.5);
+    color: lighten(@b, 50%);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    transition: all 0.5s;
+    top: 0;
+    width: 20%;
+    z-index: 999;
+}
+
+.sidebar header.sidebar-header {
+    background-color: @w;
+    padding: 20px 10px;
+}
+
+.sidebar header.sidebar-header img {
+    display: block;
+    height: 125px;
+    margin: 5px auto;
+    width: auto;
+}
+
+.sidebar header.sidebar-header .sidebar-title {
+    margin: 5px auto 2.5px auto;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 20px 0;
+}
+
+.sidebar ul > li {
+}
+
+.sidebar ul > li > a {
+    color: @b;
+    display: block;
+    font-size: 1.3rem;
+    padding: 10px;
+    -webkit-transition: background-color 0.5s color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.sidebar ul > li > a:hover,
+.sidebar ul > li > a:focus,
+.sidebar ul > li > a.active {
+    background-color: lighten(@light-grey, 2.5%);
+    color: @primary;
+    text-decoration: none;
 }
