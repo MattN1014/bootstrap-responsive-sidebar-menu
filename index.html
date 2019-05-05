@@ -20,12 +20,116 @@
     <body>
         <div class="wrapper">
             <header class="main-header fixed-top">
-                <nav class="navbar"></nav>
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <button
+                            type="button"
+                            id="sidebarCollapse"
+                            class="btn btn-primary ml-auto"
+                        >
+                            <i class="fas fa-bars" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <!-- ./container-fluid -->
+                </nav>
             </header>
+            <aside class="sidebar">
+                <header class="siderbar-header">
+                    <img
+                        class="img-fluid"
+                        src="assets/img/avatar-male.jpg"
+                        alt="Male Avatar image"
+                    />
+                    <h4 class="light-text siderbar-header">
+                        My Portfolio
+                    </h4>
+                </header>
+                <ul class="side-nav">
+                    <li class="side-nav-item">
+                        <a href="">About</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="">Services</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="">Portfolio</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="">Clients</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="">Testimonials</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- ./sidebar -->
+            <main class="content">
+                <section class="page-top" id="in-top">
+                    <div class="container-fluid">
+                        <div
+                            class="row align-items-center jutify-content-center"
+                        >
+                            <div class="col-lg-10">
+                                <h1>Welcome</h1>
+                                <h3>
+                                    This is a Bootstrap 4 responsive sidebar
+                                    menu template
+                                </h3>
+                            </div>
+                            <!-- ./col -->
+                        </div>
+                        <!-- ./row -->
+                    </div>
+                    <!-- ./container-fluid -->
+                </section>
+                <!-- ./in-top -->
+                <footer>
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="copyright">
+                                        Copyright &copy; Bootsidebar
+                                        <script>
+                                            document.write(
+                                                new Date().getFullYear()
+                                            );
+                                        </script>
+                                    </div>
+                                    <!-- ./copyright -->
+                                </div>
+                                <!-- ./col -->
+                                <div class="col-lg-6">
+                                    <div class="db">
+                                        Template by
+                                        <a
+                                            href="https://www.mwn-design.co.uk"
+                                            rel="nofollow"
+                                            target="_blank"
+                                            >MWN Design</a
+                                        >
+                                    </div>
+                                    <!-- ./db -->
+                                </div>
+                                <!-- ./col -->
+                            </div>
+                            <!-- ./row -->
+                        </div>
+                        <!-- ./container -->
+                    </div>
+                    <!-- ./footer-bottom -->
+                </footer>
+            </main>
+            <!-- ./content -->
         </div>
         <!-- ./wrapper -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>
